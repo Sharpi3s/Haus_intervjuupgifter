@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Intervjuuppgifter Haus</title>
+</head>
+<body>
+  <div class="root">
+    <div class="container">
+      <div class="row">
+       <!-- Uppgift 1 -->
+        <div class="col-4 p-2">
+          <div class="box">
+            <h3>Uppgift 1</h3>
+            <p>Nummer: 4, 1, 1, 9, 2, 5, 1</p> 
+            <p>Totalsumma: <span id="sum1" class="font-weight-bold ml-2"></span></p> 
+            <button class="btn btn-outline-info font-weight-bold" onclick="sumArray()">Summering</button>
+          </div>
+        </div>
+        <!-- Uppgift 2 -->
+        <div class="col-5 p-2">
+          <div class="box">
+            <h3>Uppgift 2</h3>
+            <p>String: She sells sea shells at the sea shore</p> 
+            <div class="d-flex">
+              <div class="mr-5">
+                <p>Antal ord: <span id="sum2" class="font-weight-bold ml-2"></span></p>
+                <button class="btn btn-outline-info font-weight-bold" onclick="sumString()">Summering</button>
+              </div>
+              <div class="ml-1">
+                <p>Unika ord: <span id="sum3" class="font-weight-bold ml-2"></span></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Uppgift 4 -->
+        <div class="col-3 p-2">
+          <div class="box">
+            <h3>Uppgift 4</h3>
+            <p></p> 
+            <p>JSON noder: <span id="sum5" class="font-weight-bold ml-2"></span></p> 
+            <button class="btn btn-outline-info font-weight-bold" onclick="startNodeCount()">Summering</button>
+          </div>
+        </div>
+         <!-- Uppgift 3 -->
+        <div class="col-12 p-2">
+          <div class="box">
+            <h3>Uppgift 3</h3>
+            <div class="row">
+              <div class="col-7 mr-5">
+                <p>Mätvärden: </p>
+                <p>1630343254:12.1|1630543254:42.1|1641343254:7.1|1630562254:31z|
+                  1630571254:|1640343254:7.05|1640843254:7.0|1610571254:1.3</p>
+                <button class="btn btn-outline-info font-weight-bold" onclick="sumMeasuring()">Summering</button>
+              </div>
+              <div class="col-4">
+                <p>Sorterade mätvärden: </p>
+                <ul id="sum4" class="font-weight-bold ml-2"></ul>
+              </div>
+            </div>
+
+            
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+</body>
+</html>
